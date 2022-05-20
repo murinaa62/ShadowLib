@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.headgehog.toolkit
+package com.google.android.renderscript
 
 import android.graphics.Bitmap
 import java.lang.IllegalArgumentException
