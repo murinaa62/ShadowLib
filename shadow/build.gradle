@@ -39,18 +39,6 @@ android {
     }
 }
 
-task deleteJar(type: Delete) {
-    delete 'libs/jars/shadowLib.jar'
-}
-
-task createJar(type: Copy) {
-    from('build/intermediates/bundles/release/')
-    into('libs/mammo/')
-    include('classes.jar')
-    rename('classes.jar', 'shadowLib.jar')
-}
-
-createJar.dependsOn(deleteJar, build)
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.6.21"
