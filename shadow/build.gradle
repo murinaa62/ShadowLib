@@ -40,14 +40,14 @@ android {
 }
 
 task deleteJar(type: Delete) {
-    delete 'libs/jars/helpLib.jar'
+    delete 'libs/jars/shadowLib.jar'
 }
 
 task createJar(type: Copy) {
     from('build/intermediates/bundles/release/')
     into('libs/mammo/')
     include('classes.jar')
-    rename('classes.jar', 'helpLib.jar')
+    rename('classes.jar', 'shadowLib.jar')
 }
 
 createJar.dependsOn(deleteJar, build)
