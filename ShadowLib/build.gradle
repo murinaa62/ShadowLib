@@ -5,7 +5,6 @@ plugins {
 
 android {
     compileSdk 32
-    namespace = "com.headgehog.shadowSample"
     defaultConfig {
         minSdk 21
         targetSdk 32

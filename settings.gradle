@@ -16,4 +16,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "shadow"
 include ':app'
-include ':shadow'
+include ':ShadowLib'
