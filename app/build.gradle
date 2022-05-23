@@ -8,7 +8,6 @@ plugins {
 
 android {
     compileSdk 32
-    namespace = "com.headgehog.shadowSample"
     testFixtures {
         enable = true
     }
